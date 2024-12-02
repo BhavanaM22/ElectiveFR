@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+  </header>
+  <form id="addElectiveForm">
+    <h2>Add New Elective</h2>
+    <input type="text" id="subjectName" placeholder="Subject Name" required />
+    <input type="text" id="type" placeholder="Type (open/professional)" required />
+    <input type="text" id="branch" placeholder="Branch (if professional)" />
+    <input type="number" id="seats" placeholder="Seats Available" required />
+    <button type="submit">Add Elective</button>
+  </form>
+  <div id="electiveList">
+    <h2>Existing Electives</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Type</th>
+          <th>Branch</th>
+          <th>Seats</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Populate dynamically -->
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
